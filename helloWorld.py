@@ -10,7 +10,7 @@ from os import environ
 consumer_key = environ['CONSUMER_KEY']
 consumer_secret = environ['CONSUMER_SECRET']
 access_token = environ['ACCESS_TOKEN']
-access_token_secret = environ['ACESS_TOKEN_SECRET']
+access_token_secret = environ['ACCESS_TOKEN_SECRET']
 
 auth = tweepy.OAuth1UserHandler(
    consumer_key, consumer_secret, access_token, access_token_secret
