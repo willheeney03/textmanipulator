@@ -42,16 +42,19 @@ while(True):
             print(text)
 
             #Do work on text here
+            print("start work on text")
             text = re.sub(r"@([^\s]+)",'',text)
             variationList = trgnr.generateStrVariations(text)
             print(variationList)
             output = "@" + str(mention.user.screen_name) + " " + variationList[randrange(0,len(variationList))]
+            print("finish work on text")
 
             #send out tweet
             try:
                 api.update_status(output,in_reply_to_status_id = mention.id)
+                print("tweet sent!")
             except:
-                print()
+                print("tweet did not send properly")
     print("is this working lol")
     time.sleep(25)
 
