@@ -55,7 +55,7 @@ while(True):
                 print("tweet sent!")
             except:
                 print("tweet did not send properly")
-    print("is this working lol")
+    print("working")
     time.sleep(25)
 
 
