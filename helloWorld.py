@@ -52,6 +52,7 @@ while(True):
                 api.update_status(output,in_reply_to_status_id = mention.id)
             except:
                 print()
+    print("is this working lol")
     time.sleep(25)
 
 
