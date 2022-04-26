@@ -4,7 +4,6 @@
 
 import sys
 import nltk
-nltk.download()
 from nltk.corpus import wordnet
 from nltk.tokenize import RegexpTokenizer
 import re
